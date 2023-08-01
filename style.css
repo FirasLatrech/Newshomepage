@@ -1,0 +1,263 @@
+:root{
+  --Softorange: hsl(35, 77%, 62%);
+  --Softred: hsl(5, 85%, 63%);
+  --Offwhite: hsl(36, 100%, 99%);
+  --Grayishblue: hsl(233, 8%, 79%);
+  --Darkgrayishblue: hsl(236, 13%, 42%);
+  --Verydarkblue: hsl(240, 100%, 5%);
+}
+body{
+  font-family: 'Inter', sans-serif;
+  margin: 2rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+}
+/* header style start  */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  
+}
+header .lines{
+  display: flex;
+  gap: 2rem;
+}
+header .lines a{
+  text-decoration: none;
+  color: #726F76;
+}
+header .lines a:hover{
+  text-decoration: none;
+  color: var(--Softred);
+  transition: 0.5ms;
+}
+
+/* header style end  */
+/* main continer start */
+.mainContiner{
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+.mainContiner .sideContiner img{
+      width: 46rem;
+      height: 15rem;
+
+}
+.sideTextContiner {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.sideTextContiner .leftTextContiner h1{
+  font-weight: 600;
+    font-size:calc( 2rem + 10px);
+}
+.sideTextContiner .rightTextContiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 36rem;
+}
+.sideTextContiner .rightTextContiner p{
+  color: var(--Darkgrayishblue);
+}
+.sideTextContiner .rightTextContiner button{
+  padding: 1rem;
+  background-color: var(--Softred);
+  color: white;
+  letter-spacing:2px;
+  border: none;
+  width: 9rem;
+  cursor: pointer;
+
+  
+
+
+}
+.sideTextContiner .rightTextContiner button:hover{
+  padding: 1rem;
+  background-color: var(--Verydarkblue);
+  color: white;
+  letter-spacing:2px;
+  border: none;
+  width: 9rem;
+  cursor: pointer;
+
+  
+
+
+}
+.leftContiner {
+  display: flex;
+  flex-direction: column;
+  gap: calc(1rem + 7px);
+  height: 28rem;
+  background-color: var(--Verydarkblue);
+  color: white;
+  padding: 1rem;
+}
+.leftContiner h1{
+  color: var(--Softorange);
+
+}
+.leftContiner h3:hover{
+  color: var(--Softorange);
+  transition: 0.3s;
+  cursor: pointer;
+}
+.leftContiner p{
+  opacity: 0.5;
+  margin-bottom: 3px;
+}
+footer{
+  display: flex;
+}
+.cart{
+  display: flex;
+  gap: 1rem;
+}
+.cart img{
+  height:125px ;
+}
+.footerTextContiner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cart .footerTextContiner h3 {
+  opacity: 0.3;
+  font-size: 2rem;
+}
+.cart .footerTextContiner h5{
+  font-size: calc( 1rem - 2px); 
+}
+.cart .footerTextContiner h5:hover {
+  color: var(--Softred);
+  transition: 0.4s;
+  cursor: pointer;
+}
+.cart .footerTextContiner p {
+  opacity: 0.3;
+}
+.burgerMenu{
+  display: none;
+}
+.mobilMenu{
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+
+  width: 13rem;
+  gap: 4rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 4rem;
+  padding-top: 16rem;
+  display: none;
+  
+}
+.menuclose{
+  position: relative;
+  left: 10rem;
+  cursor: pointer;
+}
+.mobilMenu .lienMobile {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+.mobilMenu a{
+  text-decoration: none;
+  color: #000000;
+  
+}
+.displayblock{
+  display: block !important;
+}
+.lines .line{
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width:427px) {
+  body{
+    margin: 1rem;
+    
+  }
+  .lines .line{
+    display: none;
+  }
+  .burgerMenu{
+    display: block !important;
+  }
+  .mainContiner{
+    flex-direction: column;
+  }
+  .mainContiner .sideContiner img{
+    width: 330px;
+  }
+  .sideTextContiner{
+    flex-direction: column;
+  }
+  .rightTextContiner p{
+    width: 330px;
+
+  }
+  
+  footer{
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+}
+@media  (min-width:1800px) and (max-width:2560px) {
+  
+  body{
+    
+    margin: 6rem;
+    margin-right: 13rem;
+    margin-left: 40rem;
+    
+  
+    
+  
+
+
+  }
+  .leftContiner {
+    display: flex;
+    flex-direction: column;
+    gap: calc(1rem + 7px);
+    height: 28rem;
+    background-color: var(--Verydarkblue);
+    color: white;
+    padding: 1rem;
+    min-width: 20rem;
+}
+  header {
+    display: flex;
+    gap: 45rem;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mainContiner {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 4rem;
+  margin-right: 49rem;
+}
+.cart .footerTextContiner p {
+  width: 20rem;
+}
+  
+}
